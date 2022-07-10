@@ -83,6 +83,9 @@ button:focus {
 
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
+.contact_gap{
+    padding: 100px 0;
+}
 .section_gap {
   padding: 200px 0; }
   @media (max-width: 1199px) {
@@ -3249,7 +3252,7 @@ h6 {
     content: none; }
 
 .footer_area {
-  padding: 120px 0;
+  padding: 60px 0;
   position: relative; }
   .footer_area:before {
     content: '';
