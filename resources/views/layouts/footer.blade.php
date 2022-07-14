@@ -4,6 +4,9 @@
             <div class="col-lg-12">
                 <div class="footer_top flex-column">
                     <div class="footer_logo">
+                        <a href="{{ url('/') }}">
+                            <img src="{{ asset('images/logo-cwc.png') }}" alt="CWC Logo" width="15%">
+                        </a>
                         <h4>Follow Me</h4>
                     </div>
                     <div class="footer_social">

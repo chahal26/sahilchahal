@@ -622,6 +622,10 @@ button:focus {
 .blog_categorie_area {
   padding-bottom: 80px; }
 
+  img.cat_img {
+    height: 10rem;
+}
+
 .categories_post {
   position: relative;
   text-align: center;
@@ -630,10 +634,10 @@ button:focus {
     max-width: 100%; }
   .categories_post .categories_details {
     position: absolute;
-    top: 20px;
-    left: 20px;
-    right: 20px;
-    bottom: 20px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background: rgba(34, 34, 34, 0.8);
     color: #fff;
     transition: all 0.3s linear;
