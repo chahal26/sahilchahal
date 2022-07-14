@@ -29,6 +29,8 @@ class BlogResource extends Resource
                     ->schema([
                         Forms\Components\MultiSelect::make('categories')
                             ->relationship('categories', 'name'),
+                        Forms\Components\MultiSelect::make('tags')
+                            ->relationship('tags', 'name'),
                         Forms\Components\Hidden::make('user_id')
                             ->default(auth()->user()->id),
                         Forms\Components\TextInput::make('name')
