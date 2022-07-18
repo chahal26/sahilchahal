@@ -4,15 +4,18 @@ namespace App\Http\Livewire;
 
 use Livewire\Component;
 use App\Models\Blog;
+use Livewire\WithPagination;
 
 class BlogList extends Component
 {
-    public $blogs = [] ;
+    use WithPagination;
+
+    protected $paginationTheme = 'bootstrap';
 
     public function render()
     {
-        $this->blogs = Blog::get();
+        $blogs = Blog::paginate(10);
 
-        return view('livewire.blog-list',['blogs' => $this->blogs]);
+        return view('livewire.blog-list',['blogs' => $blogs]);
     }
 }
