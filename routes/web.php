@@ -24,3 +24,5 @@ Route::get('/contact', function () {
 
 Route::get('/blogs', [BlogController::class,'blogs'])->name('blogs');
 
+Route::get('/blog/{slug}', [BlogController::class,'singleBlog'])->name('blog.single');
+
