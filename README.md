@@ -1,1 +1,1 @@
-Bloggig website
+Blogging website
